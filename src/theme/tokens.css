@@ -1,0 +1,270 @@
+/*
+ Copyright 2023 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+:root {
+  --md-source: rgb(45, 77, 49);
+  /* primary */
+  --md-ref-palette-primary0: #000000;
+  --md-ref-palette-primary10: rgb(45, 77, 49);
+  --md-ref-palette-primary20: rgb(45, 77, 49);
+  --md-ref-palette-primary30: rgb(45, 77, 49);
+  --md-ref-palette-primary40: rgb(45, 77, 49);
+  --md-ref-palette-primary50: rgb(45, 77, 49);
+  --md-ref-palette-primary60: rgb(45, 77, 49);
+  --md-ref-palette-primary70: rgb(45, 77, 49);
+  --md-ref-palette-primary80: rgb(45, 77, 49);
+  --md-ref-palette-primary90: rgb(45, 77, 49);
+  --md-ref-palette-primary95: rgb(45, 77, 49);
+  --md-ref-palette-primary99: rgb(45, 77, 49);
+  --md-ref-palette-primary100: #ffffff;
+  /* secondary */
+  --md-ref-palette-secondary0: #000000;
+  --md-ref-palette-secondary10: #7a5a00;
+  --md-ref-palette-secondary20: #b38a00;
+  --md-ref-palette-secondary30: #F9C846;
+  --md-ref-palette-secondary40: #ffe066;
+  --md-ref-palette-secondary50: #fff3b0;
+  --md-ref-palette-secondary60: #fff7cc;
+  --md-ref-palette-secondary70: #fffbe6;
+  --md-ref-palette-secondary80: #fffdf2;
+  --md-ref-palette-secondary90: #fffef8;
+  --md-ref-palette-secondary95: #fffefa;
+  --md-ref-palette-secondary99: #f7f7f7;
+  --md-ref-palette-secondary100: #ffffff;
+  /* accent/tertiary */
+  --md-ref-palette-tertiary0: #000000;
+  --md-ref-palette-tertiary10: #7a2d1a;
+  --md-ref-palette-tertiary20: #b33f22;
+  --md-ref-palette-tertiary30: #F15A29;
+  --md-ref-palette-tertiary40: #ff7a4d;
+  --md-ref-palette-tertiary50: #ff9c7a;
+  --md-ref-palette-tertiary60: #ffbfa6;
+  --md-ref-palette-tertiary70: #ffdccc;
+  --md-ref-palette-tertiary80: #fff0e6;
+  --md-ref-palette-tertiary90: #fff7f2;
+  --md-ref-palette-tertiary95: #fffaf7;
+  --md-ref-palette-tertiary99: #f7f7f7;
+  --md-ref-palette-tertiary100: #ffffff;
+  /* error */
+  --md-ref-palette-error0: #000000;
+  --md-ref-palette-error10: #7a1a1a;
+  --md-ref-palette-error20: #b32a2a;
+  --md-ref-palette-error30: #E53935;
+  --md-ref-palette-error40: #ff6f60;
+  --md-ref-palette-error50: #ffb4a9;
+  --md-ref-palette-error60: #ffd6d2;
+  --md-ref-palette-error70: #fff0ee;
+  --md-ref-palette-error80: #fff7f6;
+  --md-ref-palette-error90: #fffafa;
+  --md-ref-palette-error95: #fffdfc;
+  --md-ref-palette-error99: #f7f7f7;
+  --md-ref-palette-error100: #ffffff;
+  /* neutral */
+  --md-ref-palette-neutral0: #000000;
+  --md-ref-palette-neutral10: #222222;
+  --md-ref-palette-neutral20: #444444;
+  --md-ref-palette-neutral30: #666666;
+  --md-ref-palette-neutral40: #888888;
+  --md-ref-palette-neutral50: #aaaaaa;
+  --md-ref-palette-neutral60: #cccccc;
+  --md-ref-palette-neutral70: #e5e5e5;
+  --md-ref-palette-neutral80: #f0f0f0;
+  --md-ref-palette-neutral90: #f7f7f7;
+  --md-ref-palette-neutral95: #fafafa;
+  --md-ref-palette-neutral99: #ffffff;
+  --md-ref-palette-neutral100: #ffffff;
+  /* neutral-variant */
+  --md-ref-palette-neutral-variant0: #000000;
+  --md-ref-palette-neutral-variant10: #222222;
+  --md-ref-palette-neutral-variant20: #444444;
+  --md-ref-palette-neutral-variant30: #666666;
+  --md-ref-palette-neutral-variant40: #888888;
+  --md-ref-palette-neutral-variant50: #aaaaaa;
+  --md-ref-palette-neutral-variant60: #cccccc;
+  --md-ref-palette-neutral-variant70: #e5e5e5;
+  --md-ref-palette-neutral-variant80: #f0f0f0;
+  --md-ref-palette-neutral-variant90: #f7f7f7;
+  --md-ref-palette-neutral-variant95: #fafafa;
+  --md-ref-palette-neutral-variant99: #ffffff;
+  --md-ref-palette-neutral-variant100: #ffffff;
+  /* light */
+  --md-sys-color-primary-light: rgb(45, 77, 49);
+  --md-sys-color-on-primary-light: #ffffff;
+  --md-sys-color-primary-container-light: #eafcf1;
+  --md-sys-color-on-primary-container-light: rgb(45, 77, 49);
+  --md-sys-color-secondary-light: #F9C846;
+  --md-sys-color-on-secondary-light: rgb(14, 14, 14);
+  --md-sys-color-secondary-container-light: #fffbe6;
+  --md-sys-color-on-secondary-container-light: #F9C846;
+  --md-sys-color-tertiary-light: #F15A29;
+  --md-sys-color-on-tertiary-light: #ffffff;
+  --md-sys-color-tertiary-container-light: #fff0e6;
+  --md-sys-color-on-tertiary-container-light: #F15A29;
+  --md-sys-color-error-light: #E53935;
+  --md-sys-color-on-error-light: #ffffff;
+  --md-sys-color-error-container-light: #fff0ee;
+  --md-sys-color-on-error-container-light: #E53935;
+  --md-sys-color-outline-light: #e5e5e5;
+  --md-sys-color-background-light: #f7f7f7;
+  --md-sys-color-on-background-light: rgb(14, 14, 14);
+  --md-sys-color-surface-light: #ffffff;
+  --md-sys-color-on-surface-light: rgb(14, 14, 14);
+  --md-sys-color-surface-variant-light: #e5e5e5;
+  --md-sys-color-on-surface-variant-light: rgb(14, 14, 14);
+  --md-sys-color-inverse-surface-light: rgb(14, 14, 14);
+  --md-sys-color-inverse-on-surface-light: #ffffff;
+  --md-sys-color-inverse-primary-light: rgb(45, 77, 49);
+  --md-sys-color-shadow-light: #000000;
+  --md-sys-color-surface-tint-light: rgb(45, 77, 49);
+  --md-sys-color-outline-variant-light: #e5e5e5;
+  --md-sys-color-scrim-light: #000000;
+  /* dark */
+  --md-sys-color-primary-dark: #7be495;
+  --md-sys-color-on-primary-dark: #174d2b;
+  --md-sys-color-primary-container-dark: #21753a;
+  --md-sys-color-on-primary-container-dark: #eafcf1;
+  --md-sys-color-secondary-dark: #ffe066;
+  --md-sys-color-on-secondary-dark: #7a5a00;
+  --md-sys-color-secondary-container-dark: #b38a00;
+  --md-sys-color-on-secondary-container-dark: #fffbe6;
+  --md-sys-color-tertiary-dark: #ffbfa6;
+  --md-sys-color-on-tertiary-dark: #7a2d1a;
+  --md-sys-color-tertiary-container-dark: #b33f22;
+  --md-sys-color-on-tertiary-container-dark: #fff0e6;
+  --md-sys-color-error-dark: #ffb4a9;
+  --md-sys-color-on-error-dark: #7a1a1a;
+  --md-sys-color-error-container-dark: #b32a2a;
+  --md-sys-color-on-error-container-dark: #fff0ee;
+  --md-sys-color-outline-dark: #444444;
+  --md-sys-color-background-dark: #222222;
+  --md-sys-color-on-background-dark: #f7f7f7;
+  --md-sys-color-surface-dark: #333333;
+  --md-sys-color-on-surface-dark: #f7f7f7;
+  --md-sys-color-surface-variant-dark: #444444;
+  --md-sys-color-on-surface-variant-dark: #f7f7f7;
+  --md-sys-color-inverse-surface-dark: #f7f7f7;
+  --md-sys-color-inverse-on-surface-dark: #222222;
+  --md-sys-color-inverse-primary-dark: #2B9A47;
+  --md-sys-color-shadow-dark: #000000;
+  --md-sys-color-surface-tint-dark: #2B9A47;
+  --md-sys-color-outline-variant-dark: #444444;
+  --md-sys-color-scrim-dark: #000000;
+  /* display - large */
+  --md-sys-typescale-display-large-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-display-large-font-family-style: Regular;
+  --md-sys-typescale-display-large-font-weight: 400;
+  --md-sys-typescale-display-large-font-size: 57px;
+  --md-sys-typescale-display-large-line-height: 64px;
+  --md-sys-typescale-display-large-letter-spacing: -0.25px;
+  /* display - medium */
+  --md-sys-typescale-display-medium-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-display-medium-font-family-style: Regular;
+  --md-sys-typescale-display-medium-font-weight: 400;
+  --md-sys-typescale-display-medium-font-size: 45px;
+  --md-sys-typescale-display-medium-line-height: 52px;
+  --md-sys-typescale-display-medium-letter-spacing: 0px;
+  /* display - small */
+  --md-sys-typescale-display-small-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-display-small-font-family-style: Regular;
+  --md-sys-typescale-display-small-font-weight: 400;
+  --md-sys-typescale-display-small-font-size: 36px;
+  --md-sys-typescale-display-small-line-height: 44px;
+  --md-sys-typescale-display-small-letter-spacing: 0px;
+  /* headline - large */
+  --md-sys-typescale-headline-large-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-headline-large-font-family-style: Regular;
+  --md-sys-typescale-headline-large-font-weight: 400;
+  --md-sys-typescale-headline-large-font-size: 32px;
+  --md-sys-typescale-headline-large-line-height: 40px;
+  --md-sys-typescale-headline-large-letter-spacing: 0px;
+  /* headline - medium */
+  --md-sys-typescale-headline-medium-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-headline-medium-font-family-style: Regular;
+  --md-sys-typescale-headline-medium-font-weight: 400;
+  --md-sys-typescale-headline-medium-font-size: 28px;
+  --md-sys-typescale-headline-medium-line-height: 36px;
+  --md-sys-typescale-headline-medium-letter-spacing: 0px;
+  /* headline - small */
+  --md-sys-typescale-headline-small-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-headline-small-font-family-style: Regular;
+  --md-sys-typescale-headline-small-font-weight: 400;
+  --md-sys-typescale-headline-small-font-size: 24px;
+  --md-sys-typescale-headline-small-line-height: 32px;
+  --md-sys-typescale-headline-small-letter-spacing: 0px;
+  /* body - large */
+  --md-sys-typescale-body-large-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-body-large-font-family-style: Regular;
+  --md-sys-typescale-body-large-font-weight: 400;
+  --md-sys-typescale-body-large-font-size: 16px;
+  --md-sys-typescale-body-large-line-height: 24px;
+  --md-sys-typescale-body-large-letter-spacing: 0.5px;
+  /* body - medium */
+  --md-sys-typescale-body-medium-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-body-medium-font-family-style: Regular;
+  --md-sys-typescale-body-medium-font-weight: 400;
+  --md-sys-typescale-body-medium-font-size: 14px;
+  --md-sys-typescale-body-medium-line-height: 20px;
+  --md-sys-typescale-body-medium-letter-spacing: 0.25px;
+  /* body - small */
+  --md-sys-typescale-body-small-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-body-small-font-family-style: Regular;
+  --md-sys-typescale-body-small-font-weight: 400;
+  --md-sys-typescale-body-small-font-size: 12px;
+  --md-sys-typescale-body-small-line-height: 16px;
+  --md-sys-typescale-body-small-letter-spacing: 0.4px;
+  /* label - large */
+  --md-sys-typescale-label-large-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-label-large-font-family-style: Medium;
+  --md-sys-typescale-label-large-font-weight: 500;
+  --md-sys-typescale-label-large-font-size: 14px;
+  --md-sys-typescale-label-large-line-height: 20px;
+  --md-sys-typescale-label-large-letter-spacing: 0.1px;
+  /* label - medium */
+  --md-sys-typescale-label-medium-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-label-medium-font-family-style: Medium;
+  --md-sys-typescale-label-medium-font-weight: 500;
+  --md-sys-typescale-label-medium-font-size: 12px;
+  --md-sys-typescale-label-medium-line-height: 16px;
+  --md-sys-typescale-label-medium-letter-spacing: 0.5px;
+  /* label - small */
+  --md-sys-typescale-label-small-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-label-small-font-family-style: Medium;
+  --md-sys-typescale-label-small-font-weight: 500;
+  --md-sys-typescale-label-small-font-size: 11px;
+  --md-sys-typescale-label-small-line-height: 16px;
+  --md-sys-typescale-label-small-letter-spacing: 0.5px;
+  /* title - large */
+  --md-sys-typescale-title-large-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-title-large-font-family-style: Regular;
+  --md-sys-typescale-title-large-font-weight: 400;
+  --md-sys-typescale-title-large-font-size: 22px;
+  --md-sys-typescale-title-large-line-height: 28px;
+  --md-sys-typescale-title-large-letter-spacing: 0px;
+  /* title - medium */
+  --md-sys-typescale-title-medium-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-title-medium-font-family-style: Medium;
+  --md-sys-typescale-title-medium-font-weight: 500;
+  --md-sys-typescale-title-medium-font-size: 16px;
+  --md-sys-typescale-title-medium-line-height: 24px;
+  --md-sys-typescale-title-medium-letter-spacing: 0.15px;
+  /* title - small */
+  --md-sys-typescale-title-small-font-family-name: 'Poppins', sans-serif;
+  --md-sys-typescale-title-small-font-family-style: Medium;
+  --md-sys-typescale-title-small-font-weight: 500;
+  --md-sys-typescale-title-small-font-size: 14px;
+  --md-sys-typescale-title-small-line-height: 20px;
+  --md-sys-typescale-title-small-letter-spacing: 0.1px;
+}
