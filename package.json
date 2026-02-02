@@ -18,7 +18,7 @@
     "@sparticuz/chromium": "^138.0.2",
     "dotenv": "^16.4.5",
     "html2canvas": "^1.4.1",
-    "jspdf": "^3.0.1",
+    "jspdf": "^4.1.0",
     "puppeteer-core": "^24.22.0",
     "svelte-i18n": "^4.0.1"
   },
